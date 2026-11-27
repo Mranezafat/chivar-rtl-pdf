@@ -1,6 +1,6 @@
 # Chivar RTL PDF
 
-A Persian-first PDF-to-DOCX conversion engine extracted from the PDF processing component of [Chivar](https://chivar.ir). This is a private pre-release candidate, not yet a published open-source release.
+A Persian-first PDF-to-DOCX conversion engine extracted from the PDF processing component of [Chivar](https://chivar.ir). The standalone package is an early-stage project focused on editable document conversion.
 
 ## Why
 
@@ -43,4 +43,13 @@ The included regression tests are a starting point, not a comprehensive Persian 
 
 ## Release status
 
-Private draft. Ownership, third-party licensing, dependency security, test results and publication approval must be reviewed before any public release. No open-source license is granted by this draft.
+Version 0.1.0 is an early development version licensed under MIT. Third-party dependencies retain their respective licenses. Initial automated tests cover normalization, page selection, directional runs and native English PDF conversion; comprehensive Persian and OCR benchmarks remain planned.
+
+## Roadmap
+
+- Publish redistributable Persian and mixed-script regression fixtures.
+- Measure character and word error rates against reference text.
+- Improve OCR language selection and Arabic-specific normalization.
+- Expand security and resource-limit testing.
+- Prepare PyPI distribution.
+

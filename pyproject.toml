@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chivar-rtl-pdf"
+version = "0.1.0"
+description = "Persian-first RTL-aware PDF to DOCX conversion"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["pypdf", "pdfminer.six", "python-docx", "pillow", "pypdfium2"]
+
+[project.optional-dependencies]
+test = ["pytest", "reportlab"]
+
+[project.scripts]
+chivar-rtl-pdf = "chivar_rtl_pdf.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
